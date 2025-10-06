@@ -10,7 +10,7 @@ import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
   template: `
     <section>
       <form [formGroup]="noteForm" (submit)="submitNote()">
-        <label for="message">Your note:</label><br>
+        <label for="message">Add a note:</label><br>
         <input type="text" id="title" name="title" formControlName="title"><br>
         <textarea id="contents" name="contents" rows="5" cols="40" formControlName="contents"></textarea><br>
         <button class="primary" type="submit">Add</button>
@@ -18,7 +18,7 @@ import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
     </section>
 
     <section class="all-notes">
-    <h2>Your saved notes:</h2>
+    <h2>All saved notes:</h2>
       <app-notes [notes]="savednotes"></app-notes>
     </section>
   `,
