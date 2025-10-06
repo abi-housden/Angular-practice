@@ -1,0 +1,8 @@
+.note {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color: var(--primary-color);
+}
+
+.note p {
+  font-size: small;
+}

@@ -1,0 +1,40 @@
+label {
+  font-weight: bold;
+  margin-right: 8px;
+  color: var(--primary-color);
+  font-size: large;
+}
+input[type="text"] {
+  border: solid 1px var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 4px;
+  display: inline-block;
+  width: 30%;
+}
+textarea {
+  border: solid 1px var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 4px;
+  display: inline-block;
+  width: 30%;
+}
+h2 {
+  text-decoration: underline;
+}
+button {
+  padding: 10px;
+  border: solid 1px var(--button-color);
+  background: var(--button-color);
+  color: white;
+  border-radius: 8px;
+}
+.all-notes {
+  margin-top: 20px;
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  input[type="text"] {
+      width: 70%;
+  }   
+}
