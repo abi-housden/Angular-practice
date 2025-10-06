@@ -28,14 +28,13 @@ import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 export class Home {
 
   savednotes!: NoteDetails[];
-  notesService: NotesService = inject(NotesService);
 
   noteForm = new FormGroup({
     title: new FormControl(''),
     contents: new FormControl(''),
   });
 
-  constructor() {
+  constructor(private notesService: NotesService) {
     this.getAllNotes2();
   }
 

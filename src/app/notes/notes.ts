@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NoteDetails } from '../note-details.interface';
 
 @Component({
@@ -17,7 +17,5 @@ import { NoteDetails } from '../note-details.interface';
   styleUrl: './notes.css'
 })
 export class Notes {
-
-  notes = input.required<NoteDetails[]>();
-
+  @Input() notes: NoteDetails[] = []
 }
